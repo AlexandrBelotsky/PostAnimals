@@ -1,0 +1,28 @@
+{% extends 'animals/base.html' %}
+{% load static %}
+
+{% block title %}
+Мир животных
+{% endblock %}
+
+{% block content %}
+<div><h2 class="regis" align="right">
+<a href="{% url 'registr' %}">Регистрация</a>
+{% if user.is_authenticated %}
+    <a href="{% url 'logout' %}">Выйти</a>
+{% else %}
+    <a href="{% url 'login' %}">Авторизация</a></h2>
+{% endif %}
+    </div>
+
+<h1 id='zag'>Мир животных</h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="img">
+    <a href="{% url 'pig' %}"><img src="{% static "animals/img/pig2.png" %}"  width='270px' height="270px" hspace="180" vspace="2" ></a>
+    <a href="{% url 'kenguru' %}"><img src="{% static "animals/img/kenguru.png" %}"  width='270px' height="270px" hspace="150" vspace="20"></a>
+    <img src="{% static "animals/img/tab.png" %}"  width='270px' height="270px" hspace="150" vspace="20">
+</div>
+
+
+{% endblock %}
+

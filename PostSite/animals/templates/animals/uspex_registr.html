@@ -1,0 +1,13 @@
+{% extends 'animals/base.html' %}
+{% load static %}
+
+{% block title %}
+Регистрация
+{% endblock %}
+
+{% block content %}
+<div>
+    <a href="{% url 'main' %}"><img id='dom' src="{% static "animals/img/dom.png" %}"  width='90px' height="90px"></a>
+</div><br>
+<h2>Упспех регистрации</h2>
+{% endblock %}

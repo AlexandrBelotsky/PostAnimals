@@ -1,0 +1,48 @@
+a {
+    text-decoration: none;
+    color: rgb(255, 235, 205);
+}
+
+.regis a{
+     display: inline;
+     padding: 15px;
+
+}
+
+.regis a:hover{
+    color: rgb(255, 218, 185);
+    font-size:2rem;
+}
+
+#zag{
+	color: rgb(128, 0, 0);
+	font-size:3rem;
+	text-align:center;
+}
+
+
+#t{
+    display: block;
+    margin: auto;
+}
+#dom{
+    display: block;
+    float: right;
+}
+
+body{
+background: url('img/f.jpg');
+background-size: 100%;
+}
+.inner{
+background: url('img/f2.jpg');
+background-size: 100%;
+}
+
+.img {
+    display: inline;
+    margin-right: 15px;
+}
+.info_pig{
+text-align:center;
+}
